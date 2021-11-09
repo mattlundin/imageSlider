@@ -18,6 +18,11 @@ function changeImage() {
 		idx = img.length - 1;
 	}
 	images.style.transform = `translateX(${-idx * 450}px)`;
+	
+	//* ~~~~~ for screens < 450px ~~~~~
+	if (window.innerWidth < 450) {
+		images.style.transform = `translateX(${-idx * 350}px)`;
+	}
 }
 
 function resetInterval() {
