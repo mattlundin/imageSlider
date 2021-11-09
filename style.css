@@ -78,3 +78,14 @@ button:hover {
 button:focus {
 	outline: none;
 }
+
+@media (max-width: 450px) {
+	.carousel {
+		height: 380px;
+		width: 350px;
+	}
+	img {
+		height: 350px;
+		width: 350px;
+	}
+}
